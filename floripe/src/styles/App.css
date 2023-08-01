@@ -28,12 +28,13 @@
 
 
 .background-box{
-  width: 80%;
+  width: 70%;
   border-radius: 80px;
   background-color: #26093A;
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding: 3rem;
 }
 
 .title{
@@ -48,6 +49,7 @@
 .icon{
   height: 5rem;
   margin: 5rem;
+  animation: 1s minun ease-in-out;
 }
 
 .spoilersText{
@@ -55,6 +57,39 @@
 }
 
 .arrowDown{
-  margin: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 6rem;
   height: 2rem;
+  animation: 1s jump infinite;
+}
+
+.questionBeforeCarousel{
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes minun {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0, 3px);
+  }
 }
