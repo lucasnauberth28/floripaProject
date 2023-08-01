@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/logo-tiki.svg';
+import icon from './assets/icon-yellow.svg';
+import spoilers from './assets/tittle1.svg';
+import arrowDown from './assets/arrow-down.svg';
+
+import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body className="body">
+        <img src={logo} className="logo" alt="logotipo da Tiki"/>
+
+        <div className='background-box'>
+          <h1 className='title'>CUIDADO, AO ROLAR PODE CONTER...</h1>
+          <img src={icon} className='icon' alt="Ícone de expectativa"/>
+          <img src={spoilers} className='spoilersText' alt="Spoilers"/>
+          <img src={arrowDown} className='arrowDown' alt='Seta para baixo'/>
+        </div>
+       
+      </body>
     </div>
   );
 }
