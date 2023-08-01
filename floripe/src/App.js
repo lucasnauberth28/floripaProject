@@ -3,7 +3,7 @@ import icon from './assets/icon-yellow.svg';
 import spoilers from './assets/tittle1.svg';
 import arrowDown from './assets/arrow-down.svg';
 
-import { Carousel } from './components/carousel';
+import { Carousel } from './components/carousel.js';
 
 import './styles/App.css';
 

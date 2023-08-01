@@ -1,0 +1,11 @@
+.lock{
+    border-radius: 20px;
+    background-color: #280031;
+    opacity: 90%;
+    height: 50px;
+    width: 100px;
+}
+
+.lockIcon{
+    height: 2rem;
+}
