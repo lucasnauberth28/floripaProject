@@ -6,11 +6,6 @@ import whatsapp from '../assets/whatsapp.svg';
 import twitter from '../assets/twitter.svg';
 
 export function Share(){
-    const item = document.querySelector('slideItem');
-    item.addEventListener('mouseenter', () => {
-        console.log('testes')
-    });
-
     return(
         <div className='bgShare'>
             <p>Espalhe este SPOILER:</p>
