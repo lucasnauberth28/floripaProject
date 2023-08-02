@@ -3,7 +3,6 @@ import spoilers from '../assets/tittle1.svg';
 import arrowDown from '../assets/arrow-down.svg';
 import Carousel from '../components/carousel.jsx';
 
-
 export function Box(){
     return(
         <div className='background-box'>

@@ -2,6 +2,7 @@
 
 :root{
   --font: "Montserrat" , sans-serif;
+  --bg: #26093A;
 }
 
 .App {
@@ -17,7 +18,7 @@
 .body {
   background-image: url('../assets/bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   min-height: 100vh;
   height: 100%;
   display: flex;
@@ -28,21 +29,21 @@
 
 
 .background-box{
-  width: 70%;
+  width: 1088px;
   border-radius: 80px;
-  background-color: #26093A;
-  height: 100%;
+  background-color: var(--bg);
+  height: 1587px;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  margin-bottom: 8rem;
 }
 
 .title{
   font-size: 36px;
   font-weight: bold;
   text-shadow: -1px 0px 0px #fff, 1px 0px 0px #fff, 0px -1px 0px #fff, 0px 1px 0px #fff;
-  color: #26093A;
-  margin-top: 7rem;
+  color: var(--bg);
+  margin-top: 6rem;
   margin-bottom: 0;
 }
 
@@ -64,9 +65,10 @@
 }
 
 .questionBeforeCarousel{
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   font-weight: bold;
+  margin-top: 0;
 }
 
 @keyframes jump {

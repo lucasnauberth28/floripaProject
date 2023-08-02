@@ -1,0 +1,12 @@
+.niceText{
+    color: #fff;
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 9rem;
+    text-align: center;
+}
+
+.niceText p{
+    font-size: 10px;
+    font-weight: 400;
+}
