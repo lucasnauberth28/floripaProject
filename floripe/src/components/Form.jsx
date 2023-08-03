@@ -38,7 +38,9 @@ const Form = () => {
         />
 
         <div className='declaration'>
-            <input type="checkbox" name="" id="politica"/>
+            <label htmlFor="politica" className='borderCheck'>
+              <input type="checkbox" name="" id="politica"/>
+            </label>
             <label htmlFor="politica">Declaro que li e aceito a política de privacidade.</label>
         </div>
 

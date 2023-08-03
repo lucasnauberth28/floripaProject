@@ -17,7 +17,6 @@
 }
 
 .bgForm input{
-    width: 100%;
     height: 70px;
     border-radius: 40px;
     padding-left: 1.688rem;
@@ -26,9 +25,10 @@
     font-size: 14px;
     color: #fff;
     background: transparent;
+    appearance: none;
 }
 
-.bgForm input:focus{
+.bgForm input[type="text"]:focus, .bgForm input[type="email"]:focus{
     color: #FC2BEE;
     border: 1px solid #FC2BEE !important;
 }
@@ -37,13 +37,32 @@
     color: #fff;
 }
 
-.declaration input[type="checkbox"]{
+.borderCheck{
     height: 25px;
     width: 25px;
-    border-radius: 5px;
+    background: none;
+    border: 1px solid;
+    border-radius: 100%;
+
     display: flex;
-    background-color: white;
-    accent-color: #FC2BEE;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.declaration input[type="checkbox"]{
+    appearance: none;
+    padding: 0;
+    height: 11px;
+    width: 11px;
+    border-radius: 100%;
+    display: flex;
+    background-color: transparent;
+    border: none;
+}
+
+.declaration input[type="checkbox"]:checked{
+    background-color: #FC2BEE;
 }
 
 .declaration{
@@ -53,6 +72,7 @@
     font-weight: 400;
     gap: 0.5rem;
     align-items: center;
+    cursor: pointer;
 }
 
 .button{
@@ -65,4 +85,6 @@
     color: #000;
     box-shadow: 3px 5px 0px #FC2BEE;
     cursor: pointer;
+
+    margin-top: 2.5rem;
 }

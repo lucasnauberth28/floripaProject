@@ -75,9 +75,11 @@ export default class Carousel extends Component {
           ref={slider => (this.slider2 = slider)}
           slidesToShow={4}
           swipeToSlide={true}
+          draggable={false}
           focusOnSelect={true}
           dots={true}
           infinite={false}
+          className="slideThumb"
         >
 
           <div className="containerThumb">
